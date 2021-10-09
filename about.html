@@ -4,14 +4,18 @@
         <!-- Header Menu of the Page -->
 <header>
          
-    <div class="header">
+   <!-- <div class="header">
         <img src="foodlogo.jpeg" alt="FoodiesLogo" style="width:50px;height:50px;">
         <div class="header-right">
           <a href="main.html">Home</a>
           <a href="about.html">About</a>
           <a href="reviews.html">Reviews</a>
           <input type="text" placeholder="Search..">
-        </div>
+        </div>-->
+
+          <!--Bootstrap CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous" />
  
 </header>
         
@@ -41,12 +45,61 @@
     </head>
     
     <body>
+
+              <!--NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="foodlogo.jpeg"
+          alt="logo" width="105" height="42" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="reviews.html">Reviews</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-success" type="submit">
+            Find Food Near You!
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
        
         <h1>Meet The Foodie!</h1>
         <p>What gives someone the credentials to call themselves a "foodie?" Is it a culinary degree? How about a published journalist that specializes in food? </p>
         <br>
 
-        <h2>How about just years of dining experience?! </h2>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>How about just years of dining experience?! </h2>
+        <p>That is exactly what this author brings to the table. Specializing in "Farm to Table" services, this author respects the hard work of the small business owner in this world full of franchises and restaurant groups.</p>
+            </div>
+            <div class="col">
+              <h3>What is "MY" dining specialties?</h3>
+        <ul>
+            <li><mark>Farm to Table</mark></li>
+            <li><mark>Classic French/Fine Dining</mark></li>
+            <li><mark>Food Trucks</mark></li>  
+        </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!--<h2>How about just years of dining experience?! </h2>
         <p>That is exactly what this author brings to the table. Specializing in "Farm to Table" services, this author respects the hard work of the small business owner in this world full of franchises and restaurant groups.</p>
         
         <h3>What is "MY" dining specialties?</h3>
@@ -54,7 +107,7 @@
             <li><mark>Farm to Table</mark></li>
             <li><mark>Classic French/Fine Dining</mark></li>
             <li><mark>Food Trucks</mark></li>  
-        </ul>
+        </ul>-->
         <br>
         
         <a href="my_kitchen.html">Get a glimpse into what my family is eating.</a>
@@ -65,12 +118,60 @@
 <br><br>
 <input type="submit" value="Submit!">
 
-<footer> <img src="foodlogo.jpeg" alt="FoodiesLogo" style="width:50px;height:50px;">
+<!--<footer> <img src="foodlogo.jpeg" alt="FoodiesLogo" style="width:50px;height:50px;">
     <div class="header-right">
       <a href="main.html">Home</a>
       <a href="about.html">About</a>
       <a href="reviews.html">Reviews</a>
-      </footer>
+      </footer>-->
+
+                   <!--Footer-->
+  <footer>
+    <div class="footer">
+      <div class="footer-clean">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Home Page</h3>
+              <ul>
+                <li><a href="main.html">home</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>About</h3>
+              <ul>
+                <li><a href="about.html">About this Fodie</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Reviews</h3>
+              <ul>
+                <li><a href="reviews.html">Our Reviews</a></li>
+              </ul>
+            </div>
+            <div class="img-footer">
+              <img src="foodlogo.jpeg" alt="logo" width="220"
+                height="88" />
+            </div>
+            <div class="col-lg-2 item social">
+              <a href="#"><i class="fab fa-facebook-f"></i><a href="#"><i class="fab fa-instagram"></i></a></a><a
+                href="#"><i class="icon ion-social-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="outer-footer">
+      </div>
+    </div>
+  </footer>
+
+               <!--JS CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+  integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+  crossorigin="anonymous"></script>
 
 </body>
 

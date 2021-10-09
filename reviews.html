@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Header Menu of the Page -->
-<header>
+<!--<header>
          
     <div class="header">
         <img src="foodlogo.jpeg" alt="FoodiesLogo" style="width:50px;height:50px;">
@@ -11,8 +11,13 @@
           <a href="about.html">About</a>
           <a href="reviews.html">Reviews</a>
           <input type="text" placeholder="Search..">
-        </div>
- 
+        </div>-->
+   
+        <!--Bootstrap CDN-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous" />
+       
+        
 </header>
         
             <!-- Link style css -->
@@ -36,26 +41,116 @@ body {
 </style>
     </head>
     <body>
+        <!--NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="foodlogo.jpeg"
+          alt="logo" width="105" height="42" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="reviews.html">Reviews</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-success" type="submit">
+            Find Food Near You!
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
        
         <h1>How Does Each Restaurant Stack Up Against The Rest?</h1>
         <br>
         <h2>Here's the <em>Very Biased</em> reviews of my top 3 restaurants in Charleston, SC</h2>
-        <ul>
-            <li><mark>Bistronomy</mark></li>
-            <p>Bistronomy is a newer restaurant run by the same great Chef behind the well known "Nico's Oyster bar" in Shem Creek</p>
-            <li><mark>Slightly North of Broad (S.N.O.B.)</mark></li>
-            <p>A mainstay in the "French Qaurter" district of downtown. Slightly North of Broad is well versed in classic French Dining. </p>
-            <li><mark>Malagon</mark></li>  
-            <p>Why not Spain? Malagon brings the Spanish Tapa scene to the area, crossing styles with local ingredients.</p>
-        </ul>
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                Bistronomy
+                <br>
+                <p>Bistronomy is a newer restaurant run by the same great Chef behind the well known "Nico's Oyster bar" in Shem Creek</p>
+              </div>
+              <div class="col">
+                Slightly North of Broad
+                <br>
+                <p>A mainstay in the "French Quarter" district of downtown. Slightly North of Broad is well versed in classic French Dining. </p>
+              </div>
+              <div class="col">
+                Malagon
+                <br>
+                <p>Why not Spain? Malagon brings the Spanish Tapa scene to the area, crossing styles with local ingredients.</p>
+              </div>
+            </div>
+          </div>
+        
         <br>
         
-        <footer> <img src="foodlogo.jpeg" alt="FoodiesLogo" style="width:50px;height:50px;">
+        <!--<footer> <img src="foodlogo.jpeg" alt="FoodiesLogo" style="width:50px;height:50px;">
             <div class="header-right">
               <a href="main.html">Home</a>
               <a href="about.html">About</a>
               <a href="reviews.html">Reviews</a>
-              </footer>
+              </footer>-->
 
+              <!--Footer-->
+  <footer>
+    <div class="footer">
+      <div class="footer-clean">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Home Page</h3>
+              <ul>
+                <li><a href="main.html">home</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>About</h3>
+              <ul>
+                <li><a href="about.html">About this Fodie</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Reviews</h3>
+              <ul>
+                <li><a href="reviews.html">Our Reviews</a></li>
+              </ul>
+            </div>
+            <div class="img-footer">
+              <img src="foodlogo.jpeg" alt="logo" width="220"
+                height="88" />
+            </div>
+            <div class="col-lg-2 item social">
+              <a href="#"><i class="fab fa-facebook-f"></i><a href="#"><i class="fab fa-instagram"></i></a></a><a
+                href="#"><i class="icon ion-social-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="outer-footer">
+      </div>
+    </div>
+  </footer>
+
+               <!--JS CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+  integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+  crossorigin="anonymous"></script>
     </body>
 </html>
